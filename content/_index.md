@@ -4823,8 +4823,8 @@ If you **want** a string of type ...
 | --- | --- |
 |`String`|`Path::new(x)` <sup>`r`</sup>|
 |`CString`|`Path::new(x.to_str()?)` |
-|`OsString`|`Path::new(x.to_str()?)` <sup>`r`</sup>|
-|`PathBuf`|`Path::new(x.to_str()?)` <sup>`r`</sup>|
+|`OsString`|`Path::new(&x)` <sup>`r`</sup>|
+|`PathBuf`|`x.as_path()` <sup>`r`</sup>|
 |`Vec<u8>` <sup>1</sup> | {{ todo() }} |
 |`&str`|`Path::new(x)` <sup>`r`</sup>|
 |`&CStr`|`Path::new(x.to_str()?)` |
